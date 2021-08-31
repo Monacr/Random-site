@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+    
+    <header class='header'>
+      <h1 class='title'>Random is Not Fun</h1>
+    </header>
+  <main class='main'>
+      <div class='zero'>
+        <button id='zerozero' class='btn btn-1'>Uniform</button>
+      </div>
+
+      <br>
+
+      <div class='three'>
+        <input type='text' id='xor' placeholder='Input Seed'>
+        <button id='threethree' class='btn btn-1'>Xorshift</button>
+      </div>
+      <br>
+
+      <div class='one'>
+        <input type='text'  id='oneone' placeholder='Input six digit Seed'>
+
+        <div class='container'>
+          <button  id='btnone' class='btn btn-1'>Middle Square</button></div>
+        </div>
+
+      <br>
+
+      
+
+      <div class='two'>
+      <input type='text' id='twoone' placeholder='Input Seed'>
+      <input type='text' id='twotwo' placeholder='Input Modulus'>
+      <input type='text' id='twothree' placeholder='Input Multiplier'>
+      <input type='text' id='twofour' placeholder='Input Increment'>
+      <button id='btntwo' class='btn btn-1'>Linear Congruential Generator</button></div>
+      <br>
+      
+  </main>
+  <footer>
+    <button id='help'>Help</button>
+
+    <div id="myModal" class="modal">
+
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Pseudorandom number generators suck, but we can still use them to get 
+           'random number' sequences, or rather approximately random number 
+           sequences. Shown we can see visualization examples of the approximate random 
+           uniform distribution method, Middle Square method, Xorshift method, and 
+           Linear Congruential method of pseudo-random number generation. 
+        </p>
+        <p>
+          Click <a href='https://en.wikipedia.org/wiki/Pseudo-random_number_sampling'>here</a>
+          for information on distribution pseudo-random number generation. 
+        </p>
+        <p>
+          Click <a href='https://en.wikipedia.org/wiki/Middle-square_method'>here</a>
+          for more information on Middle Square generation. 
+        </p>
+        <p> 
+          Click <a href='https://en.wikipedia.org/wiki/Xorshift'>here</a> for more information 
+          on Xorshift generation.  
+        </p>
+        <p>
+          Click <a href='https://en.wikipedia.org/wiki/Linear_congruential_generator'>here</a> 
+          for more information on the Linear Congruential generation.
+        </p>
+        <p>
+          One helpful tip, when inputing modulus, you can put the base then adding a '^' then
+          the exponent when dealing with large moduli.
+        </p>
+      </div>
+    
+    </div>
+  </footer>
+  
+  <div class="overlay" id="overlay"></div>
+
+  </body>
+</html>
+
+<script src="sketch.js"></script>
